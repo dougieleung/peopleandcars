@@ -1,0 +1,97 @@
+@import "~antd/dist/antd.css";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper .Forms,
+.wrapper .CardsList {
+  flex: 1;
+  max-width: 400px;
+}
+
+.personFormContainer,
+.carFormContainer {
+  background-color: #545c6d;
+}
+
+.personFormContainer label,
+.carFormContainer label {
+  color: white;
+}
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.personFormContainer,
+.carFormContainer {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.personForm,
+.addCarForm {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personForm .addPersonButton,
+.addCarForm .addCarButton {
+  background-color: grey;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.updateCarButton,
+.cancelCarButton,
+.updatePersonButton,
+.cancelPersonButton {
+  background-color: grey;
+  color: white;
+  width: 260px;
+  border: none;
+  border-radius: 5px;
+}
+
+.updatePersonButton {
+  margin-left: 15px;
+}
