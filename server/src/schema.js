@@ -1,5 +1,6 @@
 import { gql } from 'apollo-server'
 import { find, remove, filter } from 'lodash'
+import { User } from '../models/user';
 
 const people = [
     {
@@ -134,8 +135,7 @@ const typeDefs = gql`
 
 const resolvers = {
     Query: {
-        people: () => people, /* prism database / index endpoint / controller logic*/
-   
+        people: () => people,
         person(parent, args, context, info) {
             return find(people, { personId: args.personId })
         },
